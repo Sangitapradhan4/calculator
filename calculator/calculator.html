@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>calculator</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+      <link rel="stylesheet"  href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"><style type="text/css"></style>
+      <script
+     src="https://code.jquery.com/jquery-3.7.0.min.js"
+     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+     crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="calculator">
+         <div class="answer">
+            <input type="text" id="display" name=""  >
+        </div>
+      <div class="line-1">
+         <div><button class="btac" onclick="
+            currentdisplay = '';
+              document.querySelector('#display').value = currentdisplay;
+              ">AC</button></div>
+         <div><button class="btac" >+/-</button></div>
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '%';
+              document.querySelector('#display').value = currentdisplay;
+              ">%</button></div>
+         <div><button class="btaco" onclick="
+            currentdisplay = currentdisplay + '/';
+              document.querySelector('#display').value = currentdisplay;
+              ">/</button></div>
+      </div>
+      
+      <div class="line-1">
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '7';
+              document.querySelector('#display').value = currentdisplay;
+              ">7</button></div>
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '8';
+              document.querySelector('#display').value = currentdisplay;
+              ">8</button></div>
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '9';
+              document.querySelector('#display').value = currentdisplay;
+              ">9</button></div>
+         <div><button class="btaco" onclick="
+            currentdisplay = currentdisplay + '*';
+              document.querySelector('#display').value = currentdisplay;
+              ">*</button></div>
+      </div>
+      <div class="line-1">
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '4';
+              document.querySelector('#display').value = currentdisplay;
+              ">4</button></div>
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '5';
+              document.querySelector('#display').value = currentdisplay;
+              ">5</button></div>
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '6';
+              document.querySelector('#display').value = currentdisplay;
+              ">6</button></div>
+         <div><button class="btaco" onclick="
+            currentdisplay = currentdisplay + '-';
+              document.querySelector('#display').value = currentdisplay;
+              ">-</button></div>
+      </div>
+      <div class="line-1">
+
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '1';
+              document.querySelector('#display').value = currentdisplay;
+              " >1</button></div>
+
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '2';
+              document.querySelector('#display').value = currentdisplay;
+              ">2</button></div>
+
+         
+         <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '3';
+              document.querySelector('#display').value = currentdisplay;
+              ">3</button></div>
+         <div><button class="btaco" onclick="
+            currentdisplay = currentdisplay + '+';
+              document.querySelector('#display').value = currentdisplay;
+              ">+</button></div>
+      </div>
+     <div class="line-1">
+        <div><button class="bt0" onclick="
+            currentdisplay = currentdisplay + '0';
+              document.querySelector('#display').value = currentdisplay;
+              ">0</button></div>
+        <div><button class="btac" onclick="
+            currentdisplay = currentdisplay + '.';
+              document.querySelector('#display').value = currentdisplay;
+              ">.</button></div>
+
+
+        <div><button class="btaco" onclick="
+        let result = eval(currentdisplay);
+        document.querySelector('#display').value = result;
+         ">=</button></div>
+
+        </div>
+      <p class="h4" style="color: white; margin-left: 10px;margin-top: 15px;text-align: center;">Made By Sangita</p>
+      </div>
+
+      
+<script src="script.js"></script>
+</body>
+</html>
